@@ -4,13 +4,9 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.geom.Line2D;
-
-import javax.swing.JOptionPane;
-import javax.swing.JComponent;
-import javax.swing.SwingUtilities;
-
 import java.util.ArrayList;
-import java.util.Random;
+
+import javax.swing.JComponent;
 
 public class LineComponent extends JComponent {
 
