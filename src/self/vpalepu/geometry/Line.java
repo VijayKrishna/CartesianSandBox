@@ -1,7 +1,5 @@
 package self.vpalepu.geometry;
 
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -119,7 +117,7 @@ public class Line {
     Runnable r = new Runnable() {
       public void run() {
         LineComponent lineComponent = new LineComponent(400,400);
-        lineComponent.addMouseListener(new CartesianMouseListener());
+        lineComponent.addMouseListener(new CartesianMouseListener(lineComponent));
         for (Line line : lines) {
           lineComponent.addLine(line);
         }
